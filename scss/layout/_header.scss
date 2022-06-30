@@ -5,6 +5,11 @@ header {
     background-color: $light-brand;
     font-size: 1.09rem;
 
+    a {
+        margin: 0;
+        padding: 0;
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -18,15 +23,21 @@ header {
             margin: 0 auto;
 
             li {
-                padding: 0.2rem 1rem;
+                display: block;
                 border-radius: 0.4rem;
                 cursor: pointer;
                 transition: 300ms background-color;
 
-                &:hover {
-                    margin-bottom: -1px;
-                    background-color: $accent-color;
-                    color: white;
+                a {
+                    color: $text-color;
+                    padding: 42px 18px;
+                    
+                    &:hover {
+                        text-decoration: none;
+                        margin-bottom: -1px;
+                        background-color: $accent-color;
+                        color: white;
+                    }
                 }
             }
         }
