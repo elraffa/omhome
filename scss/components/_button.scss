@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn {
+    padding: 1rem 2rem;
+    border: none;
+    font-weight: 600;
+
+    &-primary {
+        background-color: $brand-color;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 1.4rem;
+
+        &-lg {
+            background-color: $brand-color;
+            color: white;
+            text-transform: uppercase;
+            border-radius: 1.4rem;
+            font-size: 1.8rem;
+        }
+    }
+
+}
+

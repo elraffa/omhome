@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+header {
+    background-color: $light-brand;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            font-weight: 500;
+            margin: 0 auto;
+
+            li {
+                margin: 0 0.6rem;
+            }
+        }
+    }
+}

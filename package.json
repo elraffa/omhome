@@ -1,0 +1,29 @@
+{
+  "name": "omhome",
+  "version": "1.0.0",
+  "description": "OmPersonal Home Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-sass": "node-sass scss/main.scss css/style.css --watch",
+    "compile-sass": "node-sass scss/main.scss css/style.comp.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elraffa/omhome.git"
+  },
+  "keywords": [
+    "ompersonal",
+    "sass",
+    "html"
+  ],
+  "author": "Fede Ruffa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elraffa/omhome/issues"
+  },
+  "homepage": "https://github.com/elraffa/omhome#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
