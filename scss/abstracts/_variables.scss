@@ -8,7 +8,8 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: 'Montserrat', sans-serif;
+
 
 /// Code (monospace) font family
 /// @type List
@@ -26,6 +27,11 @@ $text-color: rgb(34, 34, 34) !default;
 /// @type Color
 $brand-color: #5AA892;
 $light-brand: #DCE8EA;
+$dark-brand: #2e574c;
+
+/// Accent color
+/// @type Color
+$accent-color: #E06F00;
 
 /// Light grey
 /// @type Color
@@ -40,15 +46,9 @@ $mid-grey: rgb(153, 153, 153) !default;
 $dark-grey: rgb(68, 68, 68) !default;
 
 
-
-
-
 /// Container's maximum width
 /// @type Length
 $max-width: 1180px !default;
-
-
-
 
 
 /// Breakpoints map

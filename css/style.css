@@ -336,8 +336,7 @@ a {
  */
 body {
   color: #222222;
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  font-family: 'Montserrat', sans-serif; }
+  font: normal 100%/1.4 "Montserrat", sans-serif; }
 
 /**
  * Clear inner floats
@@ -395,7 +394,8 @@ body {
   width: 1px; }
 
 header {
-  background-color: #DCE8EA; }
+  background-color: #DCE8EA;
+  font-size: 1.09rem; }
   header .container {
     display: flex;
     justify-content: space-between;
@@ -404,23 +404,31 @@ header {
       list-style-type: none;
       display: flex;
       justify-content: space-around;
-      font-weight: 500;
+      font-weight: 600;
       margin: 0 auto; }
       header .container ul li {
-        margin: 0 0.6rem; }
+        padding: 0.2rem 1rem;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        transition: 300ms background-color; }
+        header .container ul li:hover {
+          margin-bottom: -1px;
+          background-color: #E06F00;
+          color: white; }
 
 .btn {
   padding: 1rem 2rem;
   border: none;
-  font-weight: 600; }
+  font-weight: 600;
+  border-radius: 1.4rem;
+  color: white;
+  cursor: pointer; }
   .btn-primary {
     background-color: #5AA892;
-    color: white;
-    text-transform: uppercase;
-    border-radius: 1.4rem; }
+    text-transform: uppercase; }
     .btn-primary-lg {
       background-color: #5AA892;
-      color: white;
       text-transform: uppercase;
-      border-radius: 1.4rem;
       font-size: 1.8rem; }
+  .btn:hover {
+    background-color: #2e574c; }
