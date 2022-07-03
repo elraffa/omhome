@@ -13,16 +13,71 @@
         <header>
             <div class="container">
                 <a href="index.html"><img src="img/logo.png" width="100" alt="Ompersonal Logo" /></a>
+                <!-- Main navigation Menu -->
                 <nav>
                     <ul>
-                        <li><a href="#">Cursos gratis</a></li>
-                        <li><a href="#">Aprendizaje y prácticas <i class="fa fa-caret-down"></i></a></li>
-                        <li><a href="#">Listening <i class="fa fa-caret-down"></i></a></li>
-                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#" id="navbtn_cursos" onclick="om_open_nav('cursos')">Cursos gratis <i class="fa fa-caret-down"></i> <i class="fa fa-caret-up" style="display: none"></i></a></li>
+                        <li><a href="#" id="navbtn_aprendizaje" onclick="om_open_nav('aprendizaje')">Aprendizaje y prácticas <i class="fa fa-caret-down"></i> <i class="fa fa-caret-up" style="display: none"></i></a></li>
+                        <li><a href="#" id="navbtn_listening" onclick="om_open_nav('listening')">Listening <i class="fa fa-caret-down"></i> <i class="fa fa-caret-up" style="display: none"></i></a></li>
+                        <li><a href="#" id="navbtn_servicios" onclick="om_open_nav('servicios')">Servicios <i class="fa fa-caret-down"></i><i class="fa fa-caret-up" style="display: none"></i></a></li>
                     </ul>
                 </nav>
+
                 <button class="btn btn-primary">Inscríbete gratis</button>
             </div>
+            <!-- Dropdown Cursos -->
+            <nav id="nav_cursos" class="nav_dropdown">
+                <div class="container">
+                    <button class="nav_close_btn" onclick="om_close_nav('cursos')">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                    <div class="om_dropdown">
+
+                        <h2>Todos los cursos</h2>
+                        <a href="#">Curso Inicial</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- Dropdown Aprendizaje -->
+            <nav id="nav_aprendizaje" class="nav_dropdown">
+                <div class="container">
+                    <button class="nav_close_btn" onclick="om_close_nav('aprendizaje')">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                    <div class="om_dropdown">
+                        <h2>Aprendizaje y practica</h2>
+                        <a href="#">Curso Inicial</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- Dropdown Listening -->
+            <nav id="nav_listening" class="nav_dropdown">
+                <div class="container">
+                    <button class="nav_close_btn" onclick="om_close_nav('listening')">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                    <div class="om_dropdown">
+                        <div class="nav_close_btn">
+                            <i class="fa-solid fa-rectangle-xmark"></i>
+                        </div>
+                        <h2>Listening</h2>
+                        <a href="#">Curso Inicial</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- Dropdown Servicios -->
+            <nav id="nav_servicios" class="nav_dropdown">
+                <div class="container">
+                    <button class="nav_close_btn" onclick="om_close_nav('servicios')">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                    <div class="om_dropdown">
+                        <h2>Servicios</h2>
+                        <a href="#">Curso Inicial</a>
+                    </div>
+                </div>
+            </nav>
+
         </header>
         <div class="hero">
             <div class="container">
@@ -37,5 +92,6 @@
         </main>
 
     </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
