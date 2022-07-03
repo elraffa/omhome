@@ -32,6 +32,7 @@ $dark-brand: #2e574c;
 /// Accent color
 /// @type Color
 $accent-color: #2BB0C7;
+$accent-dark: #1d7d8e;
 
 /// Light grey
 /// @type Color
@@ -59,10 +60,6 @@ $breakpoints: (
   'medium': 768px,
   'large': 1024px,
 ) !default;
-
-
-
-
 
 
 /// Relative or absolute URL where all assets are served from
