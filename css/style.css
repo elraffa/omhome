@@ -432,7 +432,7 @@ header {
   top: 105px;
   background-color: #2BB0C7;
   width: 100%;
-  height: 70vh; }
+  height: 80vh; }
   #nav_cursos .nav_close_btn,
   #nav_aprendizaje .nav_close_btn,
   #nav_listening .nav_close_btn,
@@ -453,21 +453,23 @@ header {
       opacity: 0.8; }
 
 .om_dropdown {
-  padding: 2.4rem 11.56rem; }
+  padding: 1.5rem 7.56rem; }
   .om_dropdown_menu {
     display: flex;
-    justify-content: space-around;
-    gap: 2.2rem; }
+    justify-content: space-around; }
   .om_dropdown_menu-col {
     display: flex;
+    flex: 0 0 290px;
     flex-direction: column; }
   .om_dropdown h2 {
     font-size: 1.9rem;
     color: white;
     border-bottom: 1px solid white; }
+  .om_dropdown h3 {
+    color: white; }
   .om_dropdown a {
     color: white;
-    padding: 1rem 1rem; }
+    padding: 0.6rem 0.3rem; }
     .om_dropdown a:hover {
       background-color: #1d7d8e;
       display: block; }
