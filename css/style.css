@@ -338,6 +338,9 @@ body {
   color: #222222;
   font: normal 100%/1.4 "Montserrat", sans-serif; }
 
+.bold {
+  font-weight: 700; }
+
 /**
  * Clear inner floats
  */
@@ -453,7 +456,7 @@ header {
       opacity: 0.8; }
 
 .om_dropdown {
-  padding: 1.5rem 1.5rem 1.5rem 9rem; }
+  padding: 1.5rem 1.5rem 1.5rem 7rem; }
   .om_dropdown-featured {
     font-size: 1.2rem;
     font-weight: 700;
@@ -464,9 +467,17 @@ header {
   .om_dropdown_menu {
     display: flex;
     justify-content: space-between; }
+  .om_dropdown_menu-aprendizaje, .om_dropdown_menu-servicios {
+    display: flex;
+    justify-content: left;
+    gap: 4rem; }
+    .om_dropdown_menu-aprendizaje-col, .om_dropdown_menu-servicios-col {
+      display: flex;
+      flex: 0 420px;
+      flex-direction: column; }
   .om_dropdown_menu-col {
     display: flex;
-    flex: 0 0 290px;
+    flex: 0 0 330px;
     flex-direction: column; }
   .om_dropdown h2 {
     margin-bottom: 1.2rem;
@@ -482,6 +493,8 @@ header {
     .om_dropdown a:hover {
       background-color: #1d7d8e;
       display: block; }
+  .om_dropdown .small {
+    font-size: 0.98rem; }
 
 .navbtn_active {
   background-color: #2BB0C7 !important;

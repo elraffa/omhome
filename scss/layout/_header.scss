@@ -74,7 +74,7 @@ header {
 }
 
 .om_dropdown {
-    padding: 1.5rem 1.5rem 1.5rem 9rem;
+    padding: 1.5rem 1.5rem 1.5rem 7rem;
 
     &-featured {
         font-size: 1.2rem;
@@ -92,10 +92,21 @@ header {
         justify-content: space-between;
     }
 
+    &_menu-aprendizaje, &_menu-servicios {
+        display: flex;
+        justify-content: left;
+        gap: 4rem;
+        
+        &-col {
+            display: flex;
+            flex: 0 420px;
+            flex-direction: column;
+        }
+    }
 
     &_menu-col {
         display: flex;
-        flex: 0 0 290px;
+        flex: 0 0 330px;
         flex-direction: column;
     }
 
@@ -119,6 +130,10 @@ header {
             background-color: $accent-dark;
             display: block;
         }
+    }
+
+    .small {
+        font-size: 0.98rem;
     }
 }
 
