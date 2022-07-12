@@ -17,7 +17,7 @@
                 <nav>
                     <ul>
                         <li><a href="#" id="navbtn_cursos" onclick="om_open_nav('cursos')">Cursos gratis <i class="fa fa-caret-down"></i> <i class="fa fa-caret-up" style="display: none"></i></a></li>
-                        <li><a href="#" id="navbtn_aprendizaje" onclick="om_open_nav('aprendizaje')">Aprendizaje y prácticas <i class="fa fa-caret-down"></i> <i class="fa fa-caret-up" style="display: none"></i></a></li>
+                        <li><a href="#" id="navbtn_aprendizaje" onclick="om_open_nav('aprendizaje')">Aprendizaje y práctica <i class="fa fa-caret-down"></i> <i class="fa fa-caret-up" style="display: none"></i></a></li>
                         <li><a href="#" id="navbtn_listening" onclick="om_open_nav('listening')">Listening <i class="fa fa-caret-down"></i> <i class="fa fa-caret-up" style="display: none"></i></a></li>
                         <li><a href="#" id="navbtn_servicios" onclick="om_open_nav('servicios')">Servicios <i class="fa fa-caret-down"></i><i class="fa fa-caret-up" style="display: none"></i></a></li>
                     </ul>
@@ -31,38 +31,42 @@
                     <button class="nav_close_btn" onclick="om_close_nav('cursos')">
                         <i class="fa fa-times-circle"></i>
                     </button>
+                    <!-- Cursos Gratis Dropdown -->
                     <div class="om_dropdown">
 
                         <h2><i class="fas fa-chalkboard-teacher"></i> Cursos Gratis</h2>
-                        <div class="om_dropdown_menu">                          
-                            <div class="om_dropdown_menu-col">
-                                <a href="#">OM Placement Test</a>
+                        <div class="om_dropdown-featured">
+                            <a href="#">OM Placement Test (Examen de Nivel y Ubicación)</a>  
+                        </div>
+                        <div class="om_dropdown_menu">  
+                                <div class="om_dropdown_menu-col">
                                 <h3>Etapa Iniciación</h3>
-                                <a href="#">Principiantes (A1)</a>
-                                <h3>Etapa Aprendizaje</h3>
-                                <a href="#">Básico a Intermedio Bajo (A2)</a>
-                                <a href="#">Intermedio a Intermedio Alto (B1 - 1/2)</a>
-                                <a href="#">Avanzado Conversacional (B1 - 2/2)</a>
-                             </div>
-                             <div class="om_dropdown_menu-col">
-                                <h3>Etapa Académica</h3>
-                                <a href="#">FCE - First Certificate</a>
-                                <a href="#">CAE - Advanced</a>
-                                <a href="#">CPE - Proficiency</a>
-                                <a href="#">TOEFL Test</a>
-                             </div>
-                             <div class="om_dropdown_menu-col">
-                                <h3>Etapa Especialización</h3>
-                                <a href="#">Avanzado de Negocios</a>
-                                <a href="#">Pronunciación en Inglés</a>
-                                <a href="#">Redacción en Inglés</a>
-                                <a href="#">Conversación en Inglés</a>
-                                <a href="#">Básico a Intermedio Bajo para Sordos e Hipoacúsicos (A2)</a>
-                             </div>
+                                    <a href="#">Principiantes (A1)</a>
+                                    <h3>Etapa Aprendizaje</h3>
+                                    <a href="#">Básico a Intermedio Bajo (A2)</a>
+                                    <a href="#">Intermedio a Intermedio Alto (B1 - Primera Parte)</a>
+                                    <a href="#">Avanzado Conversacional (B1 - Segunda Parte)</a>
+                                </div>
+                                <div class="om_dropdown_menu-col">
+                                    <h3>Etapa Académica</h3>
+                                    <a href="#">FCE - First Certificate (C1)</a>
+                                    <a href="#">CAE - Advanced (C2)</a>
+                                    <a href="#">CPE - Proficiency (C3)</a>
+                                    <a href="#">TOEFL Test</a>
+                                </div>
+                                <div class="om_dropdown_menu-col">
+                                    <h3>Etapa Especialización</h3>
+                                    <a href="#">Avanzado de Negocios</a>
+                                    <a href="#">Pronunciación en Inglés</a>
+                                    <a href="#">Redacción en Inglés</a>
+                                    <a href="#">Conversación en Inglés</a>
+                                    <a href="#">Básico a Intermedio Bajo para Sordos e Hipoacúsicos (A2)</a>
+                                </div>
                         </div>
                     </div>
                 </div>
             </nav>
+
             <!-- Dropdown Aprendizaje -->
             <nav id="nav_aprendizaje" class="nav_dropdown">
                 <div class="container">
@@ -70,8 +74,22 @@
                         <i class="fa fa-times-circle"></i>
                     </button>
                     <div class="om_dropdown">
-                        <h2><i class="fas fa-pencil-alt"></i> Aprendizaje y prácticas</h2>
-                        <a href="#">Curso Inicial</a>
+                        <h2><i class="fas fa-pencil-alt"></i> Aprendizaje y práctica</h2>
+                        <div class="om_dropdown_menu-aprendizaje">  
+                            <div class="om_dropdown_menu-aprendizaje-col">
+                                <a href="#"><span class='bold'>OM Express</span><br>200 diccionarios sonoros bilingües</a>
+                                <a href="#"><span class='bold'>OM Connector</span><br>150 conectores con ejemplos y actividades</a>
+                                <a href="#"><span class='bold'>OM Grammar</span><br>Toda la gramática inglesa en español</a>
+                                <a href="#"><span class='bold'>OM Verbs</span><br>Listas de verbos regulares e irregulares</a>
+                            </div>
+                            <div class="om_dropdown_menu-aprendizaje-col">
+                                <a href="#"><span class='bold'>OM Phrasal</span><br>1000 phrasal verbs con ejemplos y actividades</a>
+                                <a href="#"><span class='bold'>OM Mistake</span><br>300 errores comunes de los hispanohablantes</a>
+                                <a href="#"><span class='bold'>OM Phonetics</span><br>Todos los sonidos ingleses con audio
+                                </a>
+                                <a href="#"><span class='bold'>OM Exercise</span><br>Ejercicios interactivos e imprimibles</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -86,7 +104,32 @@
                             <i class="fa-solid fa-rectangle-xmark"></i>
                         </div>
                         <h2><i class="fas fa-headphones"></i> Listening</h2>
-                        <a href="#">Curso Inicial</a>
+                        <div class="om_dropdown_menu">  
+                            <div class="om_dropdown_menu-col">
+                            <h3>Conversaciones</h3>
+                                <a href="#"><span class='bold'>OM Question</span><br><span class="small">200 preguntas en 3 niveles</span></a>             
+                                <a href="#"><span class='bold'>OM Video</span><br><span class="small">Videoclips en 6 niveles</span></a>
+                                <a href="#"><span class='bold'>OM Audio</span><br><span class="small"> Diálogos con ejercicios</span></a>
+                                <a href="#"><span class='bold'>OM Listen</span><br><span class="small">Actividades de comprensión oral</span></a>
+                                <a href="#"><span class='bold'>OM Bus</span><br><span class="small">Charlas a bordo de un autobús</span></a>
+                            </div>
+                            <div class="om_dropdown_menu-col">
+                                <h3>&nbsp;</h3>
+                                <a href="#"><span class='bold'>OM Theatre</span><br><span class="small">Una divertida obra de teatro de los 70</span></a>
+                                <a href="#"><span class='bold'>OM Accents</span><br><span class="small">Acentos nativos y no nativos del inglés</span></a>
+                                <a href="#"><span class='bold'>OM Podcasts</span><br><span class="small">Famosos audiocuentos descargables</span></a>
+                                <a href="#"><span class='bold'>OM Detective</span><br><span class="small">Resuelve 8 misterios con el Dr. Delator</span></a>
+                                <a href="#"><span class='bold'>OM Smiles</span><br><span class="small">Risa terapéutica en divertidas historias</span></a>
+                            </div>
+                            <div class="om_dropdown_menu-col">
+                                <h3>Variedades</h3>
+                                <a href="#"><span class='bold'>OM Sinatra</span><br><span class="small">El mejor profesor de inglés americano</span></a>
+                                <a href="#"><span class='bold'>OM Café</span><br><span class="small">Canciones favoritas del "Café Nostalgia"</span></a>
+                                <a href="#"><span class='bold'>OM Broadway</span><br><span class="small">Los shows de Broadway y Nueva York</span></a>
+                                <a href="#"><span class='bold'>OM Songs</span><br><span class="small">Canciones gramaticales no comerciales</span></a>
+                                <a href="#"><span class='bold'>OM Christmas</span><br><span class="small">Nuestra colección de música navideña</span></a>
+                            </div>
+                    </div>
                     </div>
                 </div>
             </nav>
@@ -98,7 +141,21 @@
                     </button>
                     <div class="om_dropdown">
                         <h2><i class="fas fa-tools"></i> Servicios</h2>
-                        <a href="#">Curso Inicial</a>
+                        <div class="om_dropdown_menu-servicios">
+                            <div class="om_dropdown_menu-servicios-col">
+                                <a href="#">Cómo estudiar</a>
+                                <a href="#">Cómo estudiar</a>
+                                <a href="#">Cómo estudiar</a>
+                                <a href="#">Cómo estudiar</a>
+                            </div>
+                            <div class="om_dropdown_menu-servicios-col">
+                                <a href="#">Cómo estudiar</a>
+                                <a href="#">Cómo estudiar</a>
+                                <a href="#">Cómo estudiar</a>
+                                <a href="#">Cómo estudiar</a>
+                            </div>
+                 
+                        </div>
                     </div>
                 </div>
             </nav>
