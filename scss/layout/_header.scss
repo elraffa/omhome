@@ -99,7 +99,7 @@ header {
         
         &-col {
             display: flex;
-            flex: 0 420px;
+            flex: 0 auto;
             flex-direction: column;
         }
     }
@@ -115,6 +115,7 @@ header {
         font-size: 1.9rem;
         color: white;
         border-bottom: 1px solid white;
+        min-width: 1000px;
     }
 
     h3 {
