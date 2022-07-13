@@ -104,6 +104,18 @@ header {
         }
     }
 
+    &_menu-listening {
+        display: flex;
+        justify-content: space-between;
+
+        &-col {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+
+
     &_menu-col {
         display: flex;
         flex: 0 0 330px;

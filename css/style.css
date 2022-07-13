@@ -475,6 +475,12 @@ header {
       display: flex;
       flex: 0 auto;
       flex-direction: column; }
+  .om_dropdown_menu-listening {
+    display: flex;
+    justify-content: space-between; }
+    .om_dropdown_menu-listening-col {
+      display: flex;
+      flex-direction: column; }
   .om_dropdown_menu-col {
     display: flex;
     flex: 0 0 330px;
