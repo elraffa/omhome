@@ -2,22 +2,21 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
-
-
-
-
 /// Regular font family
 /// @type List
 $text-font-stack: 'Montserrat', sans-serif;
-
 
 /// Code (monospace) font family
 /// @type List
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
-
-
-
+/// Font weights
+$font-weights: ('light': 300,
+	'regular': 400,
+	'medium': 500,
+	'bold': 700,
+	'bolder': 900
+);
 
 /// Copy text color
 /// @type Color
@@ -55,12 +54,21 @@ $max-width: 1180px !default;
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
+/*
 $breakpoints: (
-  'small': 320px,
-  'medium': 768px,
-  'large': 1024px,
+  'sm': 320px,
+  'md': 768px,
+  'lg': 1024px,
 ) !default;
+*/
 
+$breakpoints: (
+	xxl: 1400px,
+	xl: 1200px,
+	lg: 992px,
+	md: 768px,
+	sm: 576px
+);
 
 /// Relative or absolute URL where all assets are served from
 /// @type String

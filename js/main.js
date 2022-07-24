@@ -76,3 +76,7 @@ function om_close_all_nav() {
   om_close_nav('servicios');
   om_close();
 }
+
+function toggle_mobile() {
+  
+}
