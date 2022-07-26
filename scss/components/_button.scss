@@ -26,3 +26,9 @@
 
 }
 
+.btn-mobile {
+    @include respond-above(lg) {
+        display: none;
+    }
+}
+

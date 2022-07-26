@@ -16,15 +16,18 @@
                 <!-- Main navigation Menu -->
                 <nav class="header__navbar toggle-mobile">
                     <ul>
-                        <li><a href="#" id="navbtn_cursos" onclick="om_open_nav('cursos')">Cursos gratis <i class="fa fa-caret-down"></i> <i class="fa fa-caret-up" style="display: none"></i></a></li>
+                        <li><a href="#" id="navbtn_cursos" onclick="om_open_nav('cursos')">Cursos gratis <i class="fa fa-caret-down"></i> <i class="fa fa-caret-up" style="display: none"></i></a></li>        
                         <li><a href="#" id="navbtn_aprendizaje" onclick="om_open_nav('aprendizaje')">Aprendizaje y práctica <i class="fa fa-caret-down"></i> <i class="fa fa-caret-up" style="display: none"></i></a></li>
                         <li><a href="#" id="navbtn_listening" onclick="om_open_nav('listening')">Listening <i class="fa fa-caret-down"></i> <i class="fa fa-caret-up" style="display: none"></i></a></li>
                         <li><a href="#" id="navbtn_servicios" onclick="om_open_nav('servicios')">Servicios <i class="fa fa-caret-down"></i><i class="fa fa-caret-up" style="display: none"></i></a></li>
+                        <a class="btn btn-primary">Inscríbete gratis</a>
                     </ul>
                 </nav>
-
-                <button class="btn btn-primary">Inscríbete gratis</button>
+                <a href="javascript:void(0);" class="btn-mobile icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </div>
+
             <!-- Dropdown Cursos -->
             <nav id="nav_cursos" class="nav_dropdown">
                 <div class="container">
@@ -66,7 +69,6 @@
                     </div>
                 </div>
             </nav>
-
             <!-- Dropdown Aprendizaje -->
             <nav id="nav_aprendizaje" class="nav_dropdown">
                 <div class="container">

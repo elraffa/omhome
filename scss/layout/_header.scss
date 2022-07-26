@@ -4,6 +4,7 @@
 header {
     background-color: $light-brand;
     font-size: 1.09rem;
+    position: relative;
 
     a {
         margin: 0;
@@ -17,8 +18,6 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    
-        
     }
 
     &__navbar {
@@ -27,8 +26,13 @@ header {
             list-style-type: none;
             display: flex;
             justify-content: space-around;
+            align-items: center;
             font-weight: 600;
             margin: 0 auto;
+
+            :nth-child(4) {
+                margin-right: 5px;
+            }
     
             li {
                 display: block;
@@ -50,9 +54,36 @@ header {
                 }
             }
         }
+
+        &.expanded {
+            background-color: $dark-brand;
+            position: absolute;
+            height: 78vh;
+            top: 105px;
+            left: 0;
+            width: 100%;
+            padding: 4rem 0;
+
+            a {
+                color: $light-brand;
+                text-transform: uppercase;
+            }
+
+            ul {
+                flex-direction: column;
+                text-align: center;
+                margin: 0 auto;
+                padding: 0;
+                line-height: 3rem;                
+            }
+
+            @include respond-below(lg) {
+                display: block;
+            }
+        }
         
         @include respond-below(lg) {
-            display: none;
+           display: none;
         }
     }
 }
