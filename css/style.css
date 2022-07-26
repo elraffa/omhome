@@ -405,7 +405,8 @@ body {
 
 header {
   background-color: #DCE8EA;
-  font-size: 1.09rem; }
+  font-size: 1.09rem;
+  position: relative; }
   header a {
     margin: 0;
     padding: 0; }
@@ -435,9 +436,15 @@ header {
         background-color: #5AA892;
         color: white; }
 
-@media (max-width: 992px) {
-  .header__navbar {
-    display: none; } }
+.header__navbar.expanded {
+  background-color: #2e574c;
+  position: absolute;
+  height: 78vh;
+  top: 105px;
+  left: 0;
+  width: 100%; }
+  .header__navbar.expanded ul {
+    flex-direction: column; }
 
 #nav_cursos,
 #nav_aprendizaje,

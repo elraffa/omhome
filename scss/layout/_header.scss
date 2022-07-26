@@ -4,6 +4,7 @@
 header {
     background-color: $light-brand;
     font-size: 1.09rem;
+    position: relative;
 
     a {
         margin: 0;
@@ -50,9 +51,22 @@ header {
                 }
             }
         }
+
+        &.expanded {
+            background-color: $dark-brand;
+            position: absolute;
+            height: 78vh;
+            top: 105px;
+            left: 0;
+            width: 100%;
+
+            ul {
+                flex-direction: column;
+            }
+        }
         
         @include respond-below(lg) {
-            display: none;
+           // display: none;
         }
     }
 }
