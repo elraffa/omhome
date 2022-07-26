@@ -420,8 +420,11 @@ header {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   font-weight: 600;
   margin: 0 auto; }
+  .header__navbar ul :nth-child(4) {
+    margin-right: 5px; }
   .header__navbar ul li {
     display: block;
     border-radius: 0.4rem;
@@ -442,9 +445,24 @@ header {
   height: 78vh;
   top: 105px;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  padding: 4rem 0; }
+  .header__navbar.expanded a {
+    color: #DCE8EA;
+    text-transform: uppercase; }
   .header__navbar.expanded ul {
-    flex-direction: column; }
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 3rem; }
+  @media (max-width: 992px) {
+    .header__navbar.expanded {
+      display: block; } }
+
+@media (max-width: 992px) {
+  .header__navbar {
+    display: none; } }
 
 #nav_cursos,
 #nav_aprendizaje,
@@ -545,3 +563,7 @@ header {
       font-size: 1.8rem; }
   .btn:hover {
     background-color: #2e574c; }
+
+@media (min-width: 992px) {
+  .btn-mobile {
+    display: none; } }

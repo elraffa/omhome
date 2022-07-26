@@ -77,6 +77,12 @@ function om_close_all_nav() {
   om_close();
 }
 
-function toggle_mobile() {
-  
+function myFunction() {
+  var x = document.querySelector(".header__navbar");
+  x.classList.toggle('expanded');
+  // if (x.style.display === "block") {
+  //   x.style.display = "none";
+  // } else {
+  //   x.style.display = "block";
+  // }
 }
