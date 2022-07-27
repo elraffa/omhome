@@ -89,14 +89,14 @@ header {
 
     &__hamburger-button {
         display: none;
-		background-color: $dark-brand;
+		background-color: $brand-color;
 		padding: initial;
 		cursor: pointer;
 		position: relative;
 		left: 0;
 		top: 0;
-		width: 37px;
-		height: 37px;
+		width: 39px;
+		height: 39px;
         border-radius: 50%;
         border-color: transparent;
 
@@ -105,7 +105,7 @@ header {
 		}
 
 		&:hover {
-			background-color: $dark-brand;
+			background-color: $brand-color;
 		}
 
 		span {
