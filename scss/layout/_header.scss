@@ -12,7 +12,7 @@ header {
     }
 }
 
-.header {
+.navbar {
 
     &__container {
         display: flex;
@@ -85,6 +85,70 @@ header {
         @include respond-below(lg) {
            display: none;
         }
+    }
+
+    &__hamburger-button {
+        display: none;
+		background-color: $dark-brand;
+		padding: initial;
+		cursor: pointer;
+		position: relative;
+		left: 0;
+		top: 0;
+		width: 37px;
+		height: 37px;
+        border-radius: 50%;
+        border-color: transparent;
+
+		@include respond-below(lg) {
+			display: block;
+		}
+
+		&:hover {
+			background-color: $dark-brand;
+		}
+
+		span {
+			display: block;
+			width: 25.46px;
+			height: 2px;
+			background-color: white;
+			transition: .3s all;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: auto;
+
+			&:nth-child(1) {
+				top: 11px;
+			}
+
+			&:nth-child(2) {
+				top: 16px;
+			}
+
+			&:nth-child(3) {
+				top: 21px;
+			}
+		}
+
+		&.expanded {
+			span {
+				&:nth-child(1) {
+					transform: rotate(135deg);
+					top: 16px;
+				}
+
+				&:nth-child(2) {
+					opacity: 0;
+				}
+
+				&:nth-child(3) {
+					transform: rotate(-135deg);
+					top: 16px;
+				}
+			}
+		}
     }
 }
 

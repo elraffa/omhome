@@ -78,8 +78,10 @@ function om_close_all_nav() {
 }
 
 function myFunction() {
-  var x = document.querySelector(".header__navbar");
+  var x = document.querySelector(".navbar__navbar");
   x.classList.toggle('expanded');
+  var hamburgerButton = document.querySelector(".js-hamburger-button");
+  hamburgerButton.classList.toggle('expanded');
   // if (x.style.display === "block") {
   //   x.style.display = "none";
   // } else {

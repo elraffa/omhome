@@ -9,26 +9,35 @@
     color: white;
     cursor: pointer;
 
-    &-primary {
+    &__primary {
+
         background-color: $brand-color;
         text-transform: uppercase;
 
+        &:hover {
+            color: white;
+            background-color: $dark-brand;
+        }
+    
         &-lg {
             background-color: $brand-color;
             text-transform: uppercase;
             font-size: 1.8rem;
+
+            &:hover {
+                color: white;
+                background-color: $dark-brand;
+            }
+        }
+
+    }
+
+    &__mobile {
+        @include respond-above(lg) {
+            display: none;
         }
     }
-
-    &:hover {
-        background-color: $dark-brand;
-    }
-
 }
 
-.btn-mobile {
-    @include respond-above(lg) {
-        display: none;
-    }
-}
+
 

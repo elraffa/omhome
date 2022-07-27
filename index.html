@@ -10,22 +10,24 @@
 </head>
 <body>
     <main id="main-content" class="main">
-        <header class="header">
-            <div class="header__container container">
+        <header class="navbar">
+            <div class="navbar__container container">
                 <a href="index.html"><img src="img/logo.png" width="100" alt="Ompersonal Logo" /></a>
                 <!-- Main navigation Menu -->
-                <nav class="header__navbar toggle-mobile">
+                <nav class="navbar__navbar toggle-mobile">
                     <ul>
                         <li><a href="#" id="navbtn_cursos" onclick="om_open_nav('cursos')">Cursos gratis <i class="fa fa-caret-down"></i> <i class="fa fa-caret-up" style="display: none"></i></a></li>        
                         <li><a href="#" id="navbtn_aprendizaje" onclick="om_open_nav('aprendizaje')">Aprendizaje y práctica <i class="fa fa-caret-down"></i> <i class="fa fa-caret-up" style="display: none"></i></a></li>
                         <li><a href="#" id="navbtn_listening" onclick="om_open_nav('listening')">Listening <i class="fa fa-caret-down"></i> <i class="fa fa-caret-up" style="display: none"></i></a></li>
                         <li><a href="#" id="navbtn_servicios" onclick="om_open_nav('servicios')">Servicios <i class="fa fa-caret-down"></i><i class="fa fa-caret-up" style="display: none"></i></a></li>
-                        <a class="btn btn-primary">Inscríbete gratis</a>
+                        <a class="btn btn__primary">Inscríbete gratis</a>
                     </ul>
                 </nav>
-                <a href="javascript:void(0);" class="btn-mobile icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
+                <button href="javascript:void(0)" class="navbar__hamburger-button js-hamburger-button" onclick="myFunction()" aria-label="Navigation Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
 
             <!-- Dropdown Cursos -->
@@ -167,7 +169,7 @@
         <div class="hero">
             <div class="container">
                 <h1>Todos los cursos gratis</h1>
-                <button class="btn btn-primary-lg">Inscríbete gratis</button>
+                <button class="btn btn__primary-lg">Inscríbete gratis</button>
             </div>
             
         </div>
