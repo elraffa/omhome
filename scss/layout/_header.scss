@@ -89,7 +89,6 @@ header {
 
     &__hamburger-button {
         display: none;
-		background-color: $brand-color;
 		padding: initial;
 		cursor: pointer;
 		position: relative;
@@ -98,6 +97,7 @@ header {
 		width: 39px;
 		height: 39px;
         border-radius: 50%;
+        background-color: transparent;
         border-color: transparent;
 
 		@include respond-below(lg) {
@@ -105,14 +105,14 @@ header {
 		}
 
 		&:hover {
-			background-color: $brand-color;
+			background-color: transparent;
 		}
 
 		span {
 			display: block;
 			width: 25.46px;
 			height: 2px;
-			background-color: white;
+			background-color: $dark-brand;
 			transition: .3s all;
 			position: absolute;
 			left: 0;

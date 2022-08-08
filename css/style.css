@@ -466,7 +466,6 @@ header {
 
 .navbar__hamburger-button {
   display: none;
-  background-color: #5AA892;
   padding: initial;
   cursor: pointer;
   position: relative;
@@ -475,17 +474,18 @@ header {
   width: 39px;
   height: 39px;
   border-radius: 50%;
+  background-color: transparent;
   border-color: transparent; }
   @media (max-width: 992px) {
     .navbar__hamburger-button {
       display: block; } }
   .navbar__hamburger-button:hover {
-    background-color: #5AA892; }
+    background-color: transparent; }
   .navbar__hamburger-button span {
     display: block;
     width: 25.46px;
     height: 2px;
-    background-color: white;
+    background-color: #2e574c;
     transition: .3s all;
     position: absolute;
     left: 0;
@@ -602,6 +602,10 @@ header {
     .btn__primary:hover {
       color: white;
       background-color: #2e574c; }
+    @media (max-width: 992px) {
+      .btn__primary {
+        font-size: 12px;
+        padding: 0.5rem 1rem; } }
     .btn__primary-lg {
       background-color: #5AA892;
       text-transform: uppercase;

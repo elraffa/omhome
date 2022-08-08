@@ -77,7 +77,7 @@ function om_close_all_nav() {
   om_close();
 }
 
-function myFunction() {
+function mobileMenu() {
   var x = document.querySelector(".navbar__navbar");
   x.classList.toggle('expanded');
   var hamburgerButton = document.querySelector(".js-hamburger-button");
