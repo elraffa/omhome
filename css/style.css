@@ -410,6 +410,9 @@ header {
   header a {
     margin: 0;
     padding: 0; }
+  @media (max-width: 992px) {
+    header img {
+      width: 90px; } }
 
 .navbar__container {
   display: flex;
@@ -440,22 +443,25 @@ header {
         color: white; }
 
 .navbar__navbar.expanded {
-  background-color: #2e574c;
+  background-color: #2BB0C7;
   position: absolute;
   height: 78vh;
-  top: 105px;
+  top: 96px;
   left: 0;
   width: 100%;
-  padding: 4rem 0; }
-  .navbar__navbar.expanded a {
-    color: #DCE8EA;
-    text-transform: uppercase; }
+  padding: 6rem 0; }
   .navbar__navbar.expanded ul {
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
     padding: 0;
     line-height: 3rem; }
+    .navbar__navbar.expanded ul li {
+      padding: 12px 0; }
+  .navbar__navbar.expanded a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px; }
   @media (max-width: 992px) {
     .navbar__navbar.expanded {
       display: block; } }
@@ -537,6 +543,9 @@ header {
 
 .om_dropdown {
   padding: 1.5rem 1.5rem 1.5rem 7rem; }
+  @media (max-width: 992px) {
+    .om_dropdown {
+      padding: 0.5rem; } }
   .om_dropdown-featured {
     font-size: 1.2rem;
     font-weight: 700;
@@ -547,6 +556,9 @@ header {
   .om_dropdown_menu {
     display: flex;
     justify-content: space-between; }
+    @media (max-width: 992px) {
+      .om_dropdown_menu {
+        flex-direction: column; } }
   .om_dropdown_menu-aprendizaje, .om_dropdown_menu-servicios {
     display: flex;
     justify-content: left;
