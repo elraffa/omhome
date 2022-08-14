@@ -28,7 +28,7 @@ header {
 
     &__navbar {
 
-        ul {
+        &-menu {
             list-style-type: none;
             display: flex;
             justify-content: space-around;
@@ -41,25 +41,7 @@ header {
                 margin-right: 5px;
             }
     
-            li {
-                display: block;
-                border-radius: 0.4rem;
-                cursor: pointer;
-                transition: 300ms background-color;
-    
-                a {
-                    color: $text-color;
-                    padding: 42px 18px;
-                    
-                    &:hover, 
-                    &:active {
-                        text-decoration: none;
-                        margin-bottom: -1px;
-                        background-color: $brand-color;
-                        color: white;
-                    }
-                }
-            }
+            
         }
 
         &.expanded {
@@ -97,6 +79,28 @@ header {
         @include respond-below (lg) {
            display: none;
         }
+    }
+
+    &__navbar-menu-item {
+
+            display: block;
+            border-radius: 0.4rem;
+            cursor: pointer;
+            transition: 300ms background-color;
+
+            a {
+                color: $text-color;
+                padding: 42px 18px;
+                
+                &:hover, 
+                &:active {
+                    text-decoration: none;
+                    margin-bottom: -1px;
+                    background-color: $brand-color;
+                    color: white;
+                }
+            }
+        
     }
 
     &__hamburger-button {
@@ -179,6 +183,7 @@ header {
 
     @include respond-below (lg) {
         position: static;
+        background-color: $accent-dark;
         top: 0;
     }
 
@@ -210,6 +215,7 @@ header {
 
     @include respond-below (lg) {
         padding: 0.5rem;
+        text-align: left;
     }
 
     &-featured {
@@ -220,6 +226,14 @@ header {
 
         a {
             display: block;
+        }
+
+        @include respond-below (lg) {
+            a {
+                font-size: 1rem;
+
+            }
+            margin-bottom: 0.4rem;
         }
 
         

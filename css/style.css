@@ -419,28 +419,15 @@ header {
   justify-content: space-between;
   align-items: center; }
 
-.navbar__navbar ul {
+.navbar__navbar-menu {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-weight: 600;
   margin: 0 auto; }
-  .navbar__navbar ul :nth-child(4) {
+  .navbar__navbar-menu :nth-child(4) {
     margin-right: 5px; }
-  .navbar__navbar ul li {
-    display: block;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    transition: 300ms background-color; }
-    .navbar__navbar ul li a {
-      color: #222222;
-      padding: 42px 18px; }
-      .navbar__navbar ul li a:hover, .navbar__navbar ul li a:active {
-        text-decoration: none;
-        margin-bottom: -1px;
-        background-color: #5AA892;
-        color: white; }
 
 .navbar__navbar.expanded {
   background-color: #2BB0C7;
@@ -469,6 +456,20 @@ header {
 @media (max-width: 992px) {
   .navbar__navbar {
     display: none; } }
+
+.navbar__navbar-menu-item {
+  display: block;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: 300ms background-color; }
+  .navbar__navbar-menu-item a {
+    color: #222222;
+    padding: 42px 18px; }
+    .navbar__navbar-menu-item a:hover, .navbar__navbar-menu-item a:active {
+      text-decoration: none;
+      margin-bottom: -1px;
+      background-color: #5AA892;
+      color: white; }
 
 .navbar__hamburger-button {
   display: none;
@@ -529,6 +530,7 @@ header {
     #nav_listening,
     #nav_servicios {
       position: static;
+      background-color: #1d7d8e;
       top: 0; } }
   #nav_cursos .nav_close_btn,
   #nav_aprendizaje .nav_close_btn,
@@ -559,7 +561,8 @@ header {
   padding: 1.5rem 1.5rem 1.5rem 7rem; }
   @media (max-width: 992px) {
     .om_dropdown {
-      padding: 0.5rem; } }
+      padding: 0.5rem;
+      text-align: left; } }
   .om_dropdown-featured {
     font-size: 1.2rem;
     font-weight: 700;
@@ -567,6 +570,11 @@ header {
     margin-bottom: 0.8rem; }
     .om_dropdown-featured a {
       display: block; }
+    @media (max-width: 992px) {
+      .om_dropdown-featured {
+        margin-bottom: 0.4rem; }
+        .om_dropdown-featured a {
+          font-size: 1rem; } }
   .om_dropdown_menu {
     display: flex;
     justify-content: space-between; }
