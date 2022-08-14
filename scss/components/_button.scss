@@ -18,6 +18,11 @@
             color: white;
             background-color: $dark-brand;
         }
+
+        @include respond-below(lg) {
+            font-size: 12px;
+            padding: 0.5rem 1rem;
+        }
     
         &-lg {
             background-color: $brand-color;
