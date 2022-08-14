@@ -41,7 +41,7 @@
                                         </div>
                                         <div class="om_dropdown_menu">
                                             <div class="om_dropdown_menu-col">
-                                                <h3>Etapa Iniciación</h3>
+                                                <h3 class="menu-heading-3">Etapa Iniciación</h3>
                                                 <a href="#">Principiantes (A1)</a>
                                                 <h3>Etapa Aprendizaje</h3>
                                                 <a href="#">Básico a Intermedio Bajo (A2)</a>
@@ -69,7 +69,8 @@
                             </nav>
                         </li>
 
-                        <li class="navbar__navbar-menu-item"><a href="#" id="navbtn_aprendizaje" onclick="om_open_nav('aprendizaje')">Aprendizaje y
+                        <li class="navbar__navbar-menu-item"><a href="#" id="navbtn_aprendizaje"
+                                onclick="om_open_nav('aprendizaje')">Aprendizaje y
                                 práctica <i class="fa fa-caret-down"></i> <i class="fa fa-caret-up"
                                     style="display: none"></i></a>
                             <!-- Dropdown Aprendizaje -->
@@ -114,13 +115,117 @@
                                 </div>
                             </nav>
                         </li>
-                        <li class="navbar__navbar-menu-item"><a href="#" id="navbtn_listening" onclick="om_open_nav('listening')">Listening <i
-                                    class="fa fa-caret-down"></i> <i class="fa fa-caret-up"
-                                    style="display: none"></i></a></li>
-                        <li class="navbar__navbar-menu-item"><a href="#" id="navbtn_servicios" onclick="om_open_nav('servicios')">Servicios <i
-                                    class="fa fa-caret-down"></i><i class="fa fa-caret-up"
-                                    style="display: none"></i></a></li>
+                        <li class="navbar__navbar-menu-item">
+                            <a href="#" id="navbtn_listening" onclick="om_open_nav('listening')">Listening <i
+                                    class="fa fa-caret-down"></i> <i class="fa fa-caret-up" style="display: none"></i>
+                            </a>
 
+                            <!-- Dropdown Listening -->
+                            <nav id="nav_listening" class="nav_dropdown">
+                                <div class="container">
+                                    <button class="nav_close_btn" onclick="om_close_nav('listening')">
+                                        <i class="fa fa-times-circle"></i>
+                                    </button>
+                                    <div class="om_dropdown">
+                                        <div class="nav_close_btn">
+                                            <i class="fa-solid fa-rectangle-xmark"></i>
+                                        </div>
+                                        <h2><i class="fas fa-headphones"></i> Listening</h2>
+                                        <div class="om_dropdown_menu-listening">
+                                            <div class="om_dropdown_menu-listening-col">
+                                                <h3>Conversaciones</h3>
+                                                <a href="#"><span class='bold'>OM Question</span><br><span
+                                                        class="small">200 preguntas
+                                                        en 3 niveles</span></a>
+                                                <a href="#"><span class='bold'>OM Video</span><br><span
+                                                        class="small">Videoclips en 6
+                                                        niveles</span></a>
+                                                <a href="#"><span class='bold'>OM Audio</span><br><span class="small">
+                                                        Diálogos con
+                                                        ejercicios</span></a>
+                                                <a href="#"><span class='bold'>OM Listen</span><br><span
+                                                        class="small">Actividades de
+                                                        comprensión oral</span></a>
+                                                <a href="#"><span class='bold'>OM Bus</span><br><span
+                                                        class="small">Charlas a bordo de
+                                                        un autobús</span></a>
+                                            </div>
+                                            <div class="om_dropdown_menu-col">
+                                                <h3>&nbsp;</h3>
+                                                <a href="#"><span class='bold'>OM Theatre</span><br><span
+                                                        class="small">Una divertida
+                                                        obra de teatro de los 70</span></a>
+                                                <a href="#"><span class='bold'>OM Accents</span><br><span
+                                                        class="small">Acentos nativos
+                                                        y no nativos del inglés</span></a>
+                                                <a href="#"><span class='bold'>OM Podcasts</span><br><span
+                                                        class="small">Famosos
+                                                        audiocuentos descargables</span></a>
+                                                <a href="#"><span class='bold'>OM Detective</span><br><span
+                                                        class="small">Resuelve 8
+                                                        misterios con el Dr. Delator</span></a>
+                                                <a href="#"><span class='bold'>OM Smiles</span><br><span
+                                                        class="small">Risa terapéutica
+                                                        en divertidas historias</span></a>
+                                            </div>
+                                            <div class="om_dropdown_menu-col">
+                                                <h3>Variedades</h3>
+                                                <a href="#"><span class='bold'>OM Sinatra</span><br><span
+                                                        class="small">El mejor
+                                                        profesor de inglés americano</span></a>
+                                                <a href="#"><span class='bold'>OM Café</span><br><span
+                                                        class="small">Canciones favoritas
+                                                        del "Café Nostalgia"</span></a>
+                                                <a href="#"><span class='bold'>OM Broadway</span><br><span
+                                                        class="small">Los shows de
+                                                        Broadway y Nueva York</span></a>
+                                                <a href="#"><span class='bold'>OM Songs</span><br><span
+                                                        class="small">Canciones
+                                                        gramaticales no comerciales</span></a>
+                                                <a href="#"><span class='bold'>OM Christmas</span><br><span
+                                                        class="small">Nuestra
+                                                        colección de música navideña</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+
+                        </li>
+                        <li class="navbar__navbar-menu-item">
+                            <a href="#" id="navbtn_servicios" onclick="om_open_nav('servicios')">Servicios <i
+                                    class="fa fa-caret-down"></i><i class="fa fa-caret-up" style="display: none"></i>
+                            </a>
+
+                            <!-- Dropdown Servicios -->
+                            <nav id="nav_servicios" class="nav_dropdown">
+                                <div class="container">
+                                    <button class="nav_close_btn" onclick="om_close_nav('servicios')">
+                                        <i class="fa fa-times-circle"></i>
+                                    </button>
+                                    <div class="om_dropdown">
+                                        <h2><i class="fas fa-tools"></i> Servicios</h2>
+                                        <div class="om_dropdown_menu-servicios">
+                                            <div class="om_dropdown_menu-servicios-col">
+                                                <a href="#">Cómo estudiar</a>
+                                                <a href="#">¿Británico o Americano?</a>
+                                                <a href="#">Nuestros certificados</a>
+                                                <a href="#">Exámenes automatizados</a>
+                                                <a href="#">Cuentos y artículos en inglés</a>
+                                            </div>
+                                            <div class="om_dropdown_menu-servicios-col">
+                                                <a href="#">Preguntas frecuentes</a>
+                                                <a href="#">Mapa del sitio</a>
+                                                <a href="#">Boletín mensual gratuito</a>
+                                                <a href="#">Prensa y Entrevistas</a>
+                                                <a href="#">Términos legales</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </li>
                     </ul>
                 </nav>
                 <a class="btn btn__primary">Inscríbete gratis</a>
@@ -133,91 +238,6 @@
                 </button>
             </div>
 
-
-
-            <!-- Dropdown Listening -->
-            <nav id="nav_listening" class="nav_dropdown">
-                <div class="container">
-                    <button class="nav_close_btn" onclick="om_close_nav('listening')">
-                        <i class="fa fa-times-circle"></i>
-                    </button>
-                    <div class="om_dropdown">
-                        <div class="nav_close_btn">
-                            <i class="fa-solid fa-rectangle-xmark"></i>
-                        </div>
-                        <h2><i class="fas fa-headphones"></i> Listening</h2>
-                        <div class="om_dropdown_menu-listening">
-                            <div class="om_dropdown_menu-listening-col">
-                                <h3>Conversaciones</h3>
-                                <a href="#"><span class='bold'>OM Question</span><br><span class="small">200 preguntas
-                                        en 3 niveles</span></a>
-                                <a href="#"><span class='bold'>OM Video</span><br><span class="small">Videoclips en 6
-                                        niveles</span></a>
-                                <a href="#"><span class='bold'>OM Audio</span><br><span class="small"> Diálogos con
-                                        ejercicios</span></a>
-                                <a href="#"><span class='bold'>OM Listen</span><br><span class="small">Actividades de
-                                        comprensión oral</span></a>
-                                <a href="#"><span class='bold'>OM Bus</span><br><span class="small">Charlas a bordo de
-                                        un autobús</span></a>
-                            </div>
-                            <div class="om_dropdown_menu-col">
-                                <h3>&nbsp;</h3>
-                                <a href="#"><span class='bold'>OM Theatre</span><br><span class="small">Una divertida
-                                        obra de teatro de los 70</span></a>
-                                <a href="#"><span class='bold'>OM Accents</span><br><span class="small">Acentos nativos
-                                        y no nativos del inglés</span></a>
-                                <a href="#"><span class='bold'>OM Podcasts</span><br><span class="small">Famosos
-                                        audiocuentos descargables</span></a>
-                                <a href="#"><span class='bold'>OM Detective</span><br><span class="small">Resuelve 8
-                                        misterios con el Dr. Delator</span></a>
-                                <a href="#"><span class='bold'>OM Smiles</span><br><span class="small">Risa terapéutica
-                                        en divertidas historias</span></a>
-                            </div>
-                            <div class="om_dropdown_menu-col">
-                                <h3>Variedades</h3>
-                                <a href="#"><span class='bold'>OM Sinatra</span><br><span class="small">El mejor
-                                        profesor de inglés americano</span></a>
-                                <a href="#"><span class='bold'>OM Café</span><br><span class="small">Canciones favoritas
-                                        del "Café Nostalgia"</span></a>
-                                <a href="#"><span class='bold'>OM Broadway</span><br><span class="small">Los shows de
-                                        Broadway y Nueva York</span></a>
-                                <a href="#"><span class='bold'>OM Songs</span><br><span class="small">Canciones
-                                        gramaticales no comerciales</span></a>
-                                <a href="#"><span class='bold'>OM Christmas</span><br><span class="small">Nuestra
-                                        colección de música navideña</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <!-- Dropdown Servicios -->
-            <nav id="nav_servicios" class="nav_dropdown">
-                <div class="container">
-                    <button class="nav_close_btn" onclick="om_close_nav('servicios')">
-                        <i class="fa fa-times-circle"></i>
-                    </button>
-                    <div class="om_dropdown">
-                        <h2><i class="fas fa-tools"></i> Servicios</h2>
-                        <div class="om_dropdown_menu-servicios">
-                            <div class="om_dropdown_menu-servicios-col">
-                                <a href="#">Cómo estudiar</a>
-                                <a href="#">¿Británico o Americano?</a>
-                                <a href="#">Nuestros certificados</a>
-                                <a href="#">Exámenes automatizados</a>
-                                <a href="#">Cuentos y artículos en inglés</a>
-                            </div>
-                            <div class="om_dropdown_menu-servicios-col">
-                                <a href="#">Preguntas frecuentes</a>
-                                <a href="#">Mapa del sitio</a>
-                                <a href="#">Boletín mensual gratuito</a>
-                                <a href="#">Prensa y Entrevistas</a>
-                                <a href="#">Términos legales</a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </nav>
 
         </header>
         <div class="hero">
