@@ -39,9 +39,11 @@ header {
 
             :nth-child(4) {
                 margin-right: 5px;
-            }
-    
-            
+
+                @include respond-below (lg) {
+                    margin: 0;
+                }
+            }            
         }
 
         &.expanded {
@@ -62,12 +64,15 @@ header {
                 
                 li {
                     padding: 12px 0;
+
+                    @include respond-below (lg) {
+                        width: 92%;
+                    }
                 }
             }
 
             a {
                 color: white;
-                text-transform: uppercase;
                 font-size: 20px;
             }
 
@@ -216,8 +221,6 @@ header {
         @include respond-below (lg) {
             display: none;
         }
-
-
     }
 }
 
@@ -227,6 +230,7 @@ header {
     @include respond-below (lg) {
         padding: 0.5rem;
         text-align: left;
+        line-height: 1;
     }
 
     &-featured {
@@ -242,9 +246,8 @@ header {
         @include respond-below (lg) {
             margin-bottom: 0.4rem;
             font-size: 0.3rem;
-        }
-
-        
+            text-align: left;
+        }        
     }
 
     &_menu {
@@ -256,6 +259,33 @@ header {
         }
     }
 
+    &_menu-col {
+        display: flex;
+        flex: 0 0 330px;
+        flex-direction: column;
+
+        @include respond-below(lg) {
+            flex: 0 auto;
+        }
+    }
+
+    &_menu-heading-3 {
+        
+        margin-bottom: 0.2rem;
+        color: white;
+        text-transform: uppercase;
+
+        @include respond-below(lg) {
+            font-size: 1.15rem;
+            padding: 25px 0 15px 0;
+            margin: 0;
+        }
+    }
+
+    &_menu-item {
+        font-size: 1rem;
+    }
+
     &_menu-aprendizaje, &_menu-servicios {
         display: flex;
         justify-content: left;
@@ -263,6 +293,7 @@ header {
 
         @include respond-below (lg) {
             flex-direction: column;
+            gap: 0;
         }
         
         &-col {
@@ -283,14 +314,10 @@ header {
 
         @include respond-below (lg) {
             flex-direction: column;
+            gap: 0;
         }
     }
 
-    &_menu-col {
-        display: flex;
-        flex: 0 0 330px;
-        flex-direction: column;
-    }
 
     h2 {
         margin-bottom: 1.2rem;
@@ -306,17 +333,6 @@ header {
         }
     }
 
-    h3 {
-        margin-bottom: 0.2rem;
-        color: white;
-
-        @include respond-below(lg) {
-            font-size: 1.5rem;
-            padding: 0;
-            margin: 0;
-        }
-    }
-
     a {
         color: white;
         padding: 0.6rem 0.3rem;
@@ -327,7 +343,7 @@ header {
         }
 
         @include respond-below (lg) {
-            font-size: 0.5rem;
+            font-size: 0.4rem;
         }
     }
 
@@ -347,4 +363,11 @@ header {
         }
     }
 
+}
+
+
+.mobile-hide {
+    @include respond-below(lg) {
+        display: none;
+    }
 }

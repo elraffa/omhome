@@ -428,6 +428,9 @@ header {
   margin: 0 auto; }
   .navbar__navbar-menu :nth-child(4) {
     margin-right: 5px; }
+    @media (max-width: 992px) {
+      .navbar__navbar-menu :nth-child(4) {
+        margin: 0; } }
 
 .navbar__navbar.expanded {
   background-color: #1d7d8e;
@@ -445,9 +448,11 @@ header {
     line-height: 3rem; }
     .navbar__navbar.expanded ul li {
       padding: 12px 0; }
+      @media (max-width: 992px) {
+        .navbar__navbar.expanded ul li {
+          width: 92%; } }
   .navbar__navbar.expanded a {
     color: white;
-    text-transform: uppercase;
     font-size: 20px; }
   @media (max-width: 992px) {
     .navbar__navbar.expanded {
@@ -571,7 +576,8 @@ header {
   @media (max-width: 992px) {
     .om_dropdown {
       padding: 0.5rem;
-      text-align: left; } }
+      text-align: left;
+      line-height: 1; } }
   .om_dropdown-featured {
     font-size: 1.2rem;
     font-weight: 700;
@@ -582,20 +588,40 @@ header {
     @media (max-width: 992px) {
       .om_dropdown-featured {
         margin-bottom: 0.4rem;
-        font-size: 0.3rem; } }
+        font-size: 0.3rem;
+        text-align: left; } }
   .om_dropdown_menu {
     display: flex;
     justify-content: space-between; }
     @media (max-width: 992px) {
       .om_dropdown_menu {
         flex-direction: column; } }
+  .om_dropdown_menu-col {
+    display: flex;
+    flex: 0 0 330px;
+    flex-direction: column; }
+    @media (max-width: 992px) {
+      .om_dropdown_menu-col {
+        flex: 0 auto; } }
+  .om_dropdown_menu-heading-3 {
+    margin-bottom: 0.2rem;
+    color: white;
+    text-transform: uppercase; }
+    @media (max-width: 992px) {
+      .om_dropdown_menu-heading-3 {
+        font-size: 1.15rem;
+        padding: 25px 0 15px 0;
+        margin: 0; } }
+  .om_dropdown_menu-item {
+    font-size: 1rem; }
   .om_dropdown_menu-aprendizaje, .om_dropdown_menu-servicios {
     display: flex;
     justify-content: left;
     gap: 4rem; }
     @media (max-width: 992px) {
       .om_dropdown_menu-aprendizaje, .om_dropdown_menu-servicios {
-        flex-direction: column; } }
+        flex-direction: column;
+        gap: 0; } }
     .om_dropdown_menu-aprendizaje-col, .om_dropdown_menu-servicios-col {
       display: flex;
       flex: 0 auto;
@@ -608,11 +634,8 @@ header {
       flex-direction: column; }
     @media (max-width: 992px) {
       .om_dropdown_menu-listening {
-        flex-direction: column; } }
-  .om_dropdown_menu-col {
-    display: flex;
-    flex: 0 0 330px;
-    flex-direction: column; }
+        flex-direction: column;
+        gap: 0; } }
   .om_dropdown h2 {
     margin-bottom: 1.2rem;
     font-size: 1.9rem;
@@ -624,14 +647,6 @@ header {
         font-size: 1.4rem;
         min-width: auto;
         display: none; } }
-  .om_dropdown h3 {
-    margin-bottom: 0.2rem;
-    color: white; }
-    @media (max-width: 992px) {
-      .om_dropdown h3 {
-        font-size: 1.5rem;
-        padding: 0;
-        margin: 0; } }
   .om_dropdown a {
     color: white;
     padding: 0.6rem 0.3rem; }
@@ -640,7 +655,7 @@ header {
       display: block; }
     @media (max-width: 992px) {
       .om_dropdown a {
-        font-size: 0.5rem; } }
+        font-size: 0.4rem; } }
   .om_dropdown .small {
     font-size: 0.98rem; }
 
@@ -648,6 +663,10 @@ header {
   background-color: #5AA892 !important; }
   .navbtn_active a:hover {
     background-color: #5AA892 !important; }
+
+@media (max-width: 992px) {
+  .mobile-hide {
+    display: none; } }
 
 .btn {
   padding: 1rem 2rem;
