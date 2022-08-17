@@ -1,11 +1,12 @@
 # omhome
 
+Link a test web: https://elraffa.github.io/omhome
+
 ## Setup
 
-1. npm install
-2. npm run watch-sass 
-
-
+1. Clone repo 
+2. npm install
+3. npm run watch-sass 
 
 ## Styles
 
