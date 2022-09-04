@@ -606,7 +606,8 @@ header {
   .om_dropdown_menu-heading-3 {
     margin-bottom: 0.2rem;
     color: white;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 700; }
     @media (max-width: 992px) {
       .om_dropdown_menu-heading-3 {
         font-size: 1.15rem;
@@ -614,6 +615,9 @@ header {
         margin: 0; } }
   .om_dropdown_menu-item {
     font-size: 1rem; }
+    @media (max-width: 992px) {
+      .om_dropdown_menu-item {
+        font-size: 0.8rem; } }
   .om_dropdown_menu-aprendizaje, .om_dropdown_menu-servicios {
     display: flex;
     justify-content: left;
@@ -649,7 +653,8 @@ header {
         display: none; } }
   .om_dropdown a {
     color: white;
-    padding: 0.6rem 0.3rem; }
+    padding: 0.6rem 0.3rem;
+    font-weight: 400; }
     .om_dropdown a:hover {
       background-color: #1d7d8e;
       display: block; }
