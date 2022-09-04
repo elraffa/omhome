@@ -1,3 +1,47 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+
+.hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    align-items: center;
+
+    @include respond-below(lg) {
+        justify-content: center;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 4rem;
+        line-height: 1;
+        margin: 0;
+        font-weight: map-get($font-weights, "regular");
+
+        @include respond-below(lg) {
+            font-size: 3rem;
+        }
+    }
+
+    &__subtitle {
+        font-size: 4rem;
+        line-height: 1;
+        margin: 0;
+        font-weight: map-get($font-weights, "extra-bold");
+        padding-bottom: 3rem;
+
+        @include respond-below(lg) {
+            font-size: 3rem;
+        }
+    }
+
+    &__image {
+
+            @include respond-below(lg) {
+                display: none;
+            }
+
+    }
+}

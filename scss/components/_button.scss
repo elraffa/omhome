@@ -33,6 +33,10 @@
                 color: white;
                 background-color: $dark-brand;
             }
+
+            @include respond-below(lg) {
+                font-size: 1rem;
+            }
         }
 
     }
