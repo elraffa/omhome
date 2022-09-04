@@ -274,6 +274,7 @@ header {
         margin-bottom: 0.2rem;
         color: white;
         text-transform: uppercase;
+        font-weight: map-get($font-weights, 'bold' );
 
         @include respond-below(lg) {
             font-size: 1.15rem;
@@ -284,6 +285,10 @@ header {
 
     &_menu-item {
         font-size: 1rem;
+
+        @include respond-below(lg) {
+            font-size: 0.8rem;
+        }
     }
 
     &_menu-aprendizaje, &_menu-servicios {
@@ -336,6 +341,7 @@ header {
     a {
         color: white;
         padding: 0.6rem 0.3rem;
+        font-weight: map-get($font-weights, 'regular' );
 
         &:hover {
             background-color: $accent-dark;

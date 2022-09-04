@@ -7,5 +7,5 @@ body {
 }
 
 .bold {
-  font-weight: 700;
+  font-weight: map-get($font-weights, "bold");
 }
