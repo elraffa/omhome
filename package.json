@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/elraffa/omhome#readme",
   "dependencies": {
+    "gsap": "^3.11.1",
     "node-sass": "^7.0.1"
   }
 }
