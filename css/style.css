@@ -796,9 +796,11 @@ header {
   .footer__menu-heading-4 {
     font-size: 1.5rem;
     margin-bottom: 0.2rem;
+    padding-bottom: 0.8rem;
     color: white;
     text-transform: uppercase;
-    font-weight: 700; }
+    font-weight: 700;
+    border-bottom: 1px solid #DCE8EA; }
     @media (max-width: 992px) {
       .footer__menu-heading-4 {
         font-size: 1.15rem;
@@ -811,7 +813,7 @@ header {
       color: #DCE8EA; }
     @media (max-width: 992px) {
       .footer__menu-item {
-        font-size: 0.8rem; } }
+        font-size: 1.1rem; } }
 
 .btn {
   padding: 1rem 2rem;
