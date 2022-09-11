@@ -106,7 +106,7 @@
         margin: 0 auto;
 
         @include respond-below(lg) {
-            max-width: 50%;
+            max-width: 70%;
         }
     }
 }
