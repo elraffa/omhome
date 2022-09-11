@@ -78,13 +78,30 @@ function om_close_all_nav() {
 }
 
 function mobileMenu() {
-  var x = document.querySelector(".navbar__navbar");
+  var x = document.querySelector('.navbar__navbar');
   x.classList.toggle('expanded');
-  var hamburgerButton = document.querySelector(".js-hamburger-button");
+  var hamburgerButton = document.querySelector('.js-hamburger-button');
   hamburgerButton.classList.toggle('expanded');
   // if (x.style.display === "block") {
   //   x.style.display = "none";
   // } else {
   //   x.style.display = "block";
   // }
+}
+
+// FAQ Accordion
+
+var acc = document.getElementsByClassName('accordion');
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener('click', function () {
+    this.classList.toggle('active');
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + 'px';
+    }
+  });
 }

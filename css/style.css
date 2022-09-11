@@ -829,6 +829,42 @@ header {
     .btn__mobile {
       display: none; } }
 
+.accordion {
+  color: #444;
+  cursor: pointer;
+  margin: 15px 0;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid #eee;
+  border-radius: 1.2rem;
+  outline: none;
+  transition: 0.4s; }
+
+.accordion:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px; }
+
+.active:after {
+  content: "\2796";
+  /* Unicode character for "minus" sign (-) */ }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc; }
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out; }
+
 .hero {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -873,3 +909,34 @@ header {
   @media (max-width: 992px) {
     .novedades__image {
       display: none; } }
+
+.faq {
+  /* Review this
+    &__title {
+        &::before {
+            content: '';
+            background: url('../img/bg-faq.png') no-repeat center center/cover;
+            position: absolute;
+            left: 50px;
+            width: 1250px;
+            height: 44px;
+            z-index: -1;
+        }
+    }
+    */ }
+  .faq__content {
+    padding: 40px 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    @media (max-width: 992px) {
+      .faq__content {
+        padding: 20px 40px; } }
+  .faq__accordion {
+    padding: 20px 0; }
+  .faq__btn {
+    max-width: 40%;
+    margin: 0 auto; }
+    @media (max-width: 992px) {
+      .faq__btn {
+        max-width: 50%; } }
