@@ -71,3 +71,42 @@
         }
 }
 }
+
+.faq {
+    &__content {
+        padding: 40px 240px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include respond-below(lg) {
+            padding: 20px 40px;
+        }
+    }
+
+    /* Review this
+    &__title {
+        &::before {
+            content: '';
+            background: url('../img/bg-faq.png') no-repeat center center/cover;
+            position: absolute;
+            left: 50px;
+            width: 1250px;
+            height: 44px;
+            z-index: -1;
+        }
+    }
+    */
+    &__accordion {
+        padding: 20px 0;
+    }
+
+    &__btn {
+        max-width: 40%;
+        margin: 0 auto;
+
+        @include respond-below(lg) {
+            max-width: 70%;
+        }
+    }
+}
