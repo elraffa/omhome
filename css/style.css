@@ -482,7 +482,6 @@ header {
 .navbar__navbar.expanded {
   background-color: #1d7d8e;
   position: absolute;
-  height: 78vh;
   top: 96px;
   left: 0;
   width: 100%;
